@@ -36,6 +36,11 @@ describe('My Little Hero', function () {
             expect(label).toEqual(true);
         });
 
+        it('TC-006 Label for image upload', function () {
+            const label = $$(sel.label)[4].isDisplayed();
+            expect(label).toEqual(true);
+        });
+
     });
 
     describe('Labels are correct', function () {
@@ -50,15 +55,16 @@ describe('My Little Hero', function () {
             expect(label).toEqual(exp.labelGender);
         });
 
-        it('TC-004 Label for age', function () {
-            const label = $$('.ant-form-item-required')[2].isDisplayed();
-            expect(label).toEqual(true);
+        it('TC-008 Label for age', function () {
+            const label = $$(sel.label)[2].isDisplayed();
+            expect(label).toEqual(exp.labelAge);
         });
 
-        it('TC-005 Label for story', function () {
-            const label = $$('.ant-form-item-required')[3].isDisplayed();
-            expect(label).toEqual(true);
+        it('TC-009 Label for story', function () {
+            const label = $$(sel.label)[3].isDisplayed();
+            expect(label).toEqual(exp.labelStory);
         });
 
     });
 });
+

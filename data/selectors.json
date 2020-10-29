@@ -1,7 +1,10 @@
 {
-  "label": ".ant-form-item-required",
+  "label": ".ant-form-item-label label",
   "name": "#name",
   "gender": ".ant-radio-input",
   "age": "#age",
-  "story": "#story"
+  "story": "#story",
+  "pageHeader": ".hero__form h3",
+  "pageDescription": ".hero__form p",
+  "submitButton":".ant-btn"
 }

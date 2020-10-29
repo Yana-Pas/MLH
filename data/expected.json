@@ -2,5 +2,9 @@
   "labelName": "1. What is your HERO's name?",
   "labelGender": "2. Please choose a gender.",
   "labelAge": "3. How old is your hero?",
-  "labelStory": "4. What type of story would you like to read?"
+  "labelStory": "4. What type of story would you like to read?",
+  "labelImage": "5. Upload an image (optional)",
+  "pageHeader": "My Little Hero",
+  "pageDescription": "Let's create your own HERO! It's super easy with our application!",
+  "submitButton": "Create!"
 }
