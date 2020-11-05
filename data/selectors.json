@@ -1,10 +1,23 @@
 {
   "label": ".ant-form-item-label label",
   "name": "#name",
-  "gender": ".ant-radio-input",
+  "gender": ".ant-radio",
   "age": "#age",
-  "story": "#story",
+  "story": ".ant-select-selector",
   "pageHeader": ".hero__form h3",
   "pageDescription": ".hero__form p",
-  "submitButton":".ant-btn"
+  "submitButton":".ant-btn",
+  "storyClick": ".ant-select-show-arrow",
+  "storyType": ".ant-select-item-option",
+  "storyPlaceholder": ".ant-select-selection-placeholder",
+  "genderChoice" : ".ant-radio-input",
+  "tryAgain": ".btn-primary",
+  "imageText": "/*[@class='anticon-plus']/following-sibling::div",
+  "imageField": "span.ant-upload",
+  "plusInBox":"//*[@data-icon='plus']"
+
+
+
+
+
 }

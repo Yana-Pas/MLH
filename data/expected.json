@@ -1,10 +1,17 @@
 {
-  "labelName": "1. What is your HERO's name?",
+  "labelName": "1. What is your Hero's name?",
   "labelGender": "2. Please choose a gender.",
-  "labelAge": "3. How old is your hero?",
+  "labelAge": "3. How old is your Hero?",
   "labelStory": "4. What type of story would you like to read?",
   "labelImage": "5. Upload an image (optional)",
   "pageHeader": "My Little Hero",
   "pageDescription": "Let's create your own HERO! It's super easy with our application!",
-  "submitButton": "Create!"
+  "submitButton": "Create!",
+  "placeholderName": "Hero's name",
+  "placeholderAge": "Hero's age",
+  "placeholderStory": "Type of the story",
+  "optionHe": "he",
+  "optionShe": "she",
+  "optionIt": "it",
+  "imageText": "drag and drop your image here or browse"
 }

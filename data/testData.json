@@ -1,0 +1,11 @@
+
+{
+  "name": "LadyBug",
+  "gender": {
+    "he": 0,
+    "she": 1,
+    "it": 2
+  },
+  "age": 123,
+  "storyType": 6
+}
