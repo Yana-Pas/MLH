@@ -1,8 +1,9 @@
 const selectors = require('../../data/selectors.json');
 const expected = require('../../data/expected.json');
 
+
 describe('My Little Hero', function () {
-    describe('Getting to the page', function () {
+  /*  describe('Getting to the page', function () {
         before(() => {
             browser.maximizeWindow();
             browser.url('https://qa-apps.netlify.app/app_my_hero');
@@ -116,115 +117,318 @@ describe('My Little Hero', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
         });
         it('TC-017 Name ', function () {
-            browser.url('https://qa-apps.netlify.app/app_my_hero');
             const name = $(selectors.name);
-            expect(name.isDisplayed()).toEqual(true);
+            expect(name.isClickable()).toEqual(true);
         });
 
         it('TC-018 Gender He', function () {
             const gender = $$(selectors.gender)[0];
-            expect(gender.isDisplayed()).toEqual(true);
+            expect(gender.isClickable()).toEqual(true);
         });
 
         it('TC-019 Gender She', function () {
             const gender = $$(selectors.gender)[1];
-            expect(gender.isDisplayed()).toEqual(true);
+            expect(gender.isClickable()).toEqual(true);
         });
 
         it('TC-020 Gender It', function () {
             const gender = $$(selectors.gender)[2];
-            expect(gender.isDisplayed()).toEqual(true);
+            expect(gender.isClickable()).toEqual(true);
         });
 
         it('TC-021 Age', function () {
             const age = $(selectors.age);
-            expect(age.isDisplayed()).toEqual(true);
+            expect(age.isClickable()).toEqual(true);
         });
 
         it('TC-022 Story', function () {
             const story = $(selectors.story);
-            expect(story.isDisplayed()).toEqual(true);
+            expect(story.isClickable()).toEqual(true);
         });
 
-        it('TC-023 Create', function () {
-            const submitButton = $(sel.submitButton);
-            expect(submitButton.isDisplayed()).toEqual(true);
-        });
-    });
-
-    describe('Inputs are displayed', function () {
-
-        it('TC-014 Name ', function () {
-            browser.url('https://qa-apps.netlify.app/app_my_hero');
-            const name = $(selectors.name).isClickable()
-            expect(name).toEqual(true);
+        it('TC-023 Image', function () {
+            const image = $(selectors.imageField).isClickable();
+            expect(image).toEqual(true);
         });
 
-        it('TC-015 Gender He', function () {
-            const gender = $$(selectors.gender)[0].isClickable();
-            console.log(gender);
-            expect(gender).toEqual(true);
-        });
-
-        it('TC-016 Gender She', function () {
-            const gender = $$(selectors.gender)[1].isClickable();
-            expect(gender).toEqual(true);
-        });
-
-        it('TC-017 Gender It', function () {
-            const gender = $$(selectors.gender)[2].isClickable();
-            expect(gender).toEqual(true);
-        });
-
-        it('TC-018 Age', function () {
-            const age = $(selectors.age).isClickable();
-            expect(age).toEqual(true);
-        });
-
-        it('TC-019 Story', function () {
-            const story = $(selectors.story).isDisplayed();
-            expect(story).toEqual(true);
-        });
-
-        it('TC-020 Create', function () {
-            const submitButton = $(selectors.submitButton).isDisplayed();
-            expect(submitButton).toEqual(true);
-        });
     });
 
     describe('Placeholders are correct', function () {
 
-        it('TC-021 Placeholder for name = Hero\'s name', function () {
-            const placeholderName = $(sel.name);
-            expect(placeholderName.getAttribute("placeholder")).toEqual(exp.placeholderName);
+        it('TC-024 Placeholder for name = Hero\'s name', function () {
+            const placeholderName = $(selectors.name);
+            expect(placeholderName.getAttribute("placeholder")).toEqual(expected.placeholderName);
         });
 
-        it('TC-022 Placeholder for age = Hero\'s age', function () {
+        it('TC-025 Placeholder for age = Hero\'s age', function () {
             const placeholderAge = $(selectors.age);
-            expect(placeholderAge.getAttribute("placeholder")).toEqual(exp.placeholderAge);
+            expect(placeholderAge.getAttribute("placeholder")).toEqual(expected.placeholderAge);
         });
 
-        it('TC-023 Placeholder for story = Type of the story', function () {
+        it('TC-026 Placeholder for story = Type of the story', function () {
             const placeholderStory = $(selectors.storyPlaceholder);
-            expect(placeholderStory.getText()).toEqual(exp.placeholderStory);
+            expect(placeholderStory.getText()).toEqual(expected.placeholderStory);
         });
 
-        it('TC-024 Option for gender he is correct', function () {
+        it('TC-027 Option for gender he is correct', function () {
             const optionHe = $$(selectors.genderChoice)[0];
             expect(optionHe.getValue()).toEqual(expected.optionHe);
         });
 
-        it('TC-025 Option for gender she is correct', function () {
+        it('TC-028 Option for gender she is correct', function () {
             const optionShe = $$(selectors.genderChoice)[1];
             expect(optionShe.getValue()).toEqual(expected.optionShe);
         });
 
-        it('TC-026 Option for gender it is correct', function () {
+        it('TC-029 Option for gender it is correct', function () {
             const optionIt = $$(selectors.genderChoice)[2];
             expect(optionIt.getValue()).toEqual(expected.optionIt);
         });
 
+        it('TC-031 Placeholder for Image is correct', function () {
+            const placeholderImage = $(selectors.imageText);
+            expect(placeholderImage.getText()).toEqual(expected.imageText);
+        });
 
+
+    }); */
+  /*  describe('Name input fields accepts correct inputs', function () {
+        before(() => {
+            browser.maximizeWindow();
+            browser.url('https://qa-apps.netlify.app/app_my_hero');
+        });
+
+        function clearInputBox(input) {
+            input.click();
+            browser.keys(["\ue009" + "a", "\ue017", "\ue000"]); // ctr+a, del
+        }
+
+        it('TC-032  Name input field accepts Upper case letters ', function () {
+            const characterName = "LADYBUG";
+            const name = $(selectors.name);
+            clearInputBox(name);
+            name.setValue(characterName);
+            expect(name.getValue()).toEqual(characterName);
+        });
+
+        it('TC-033  Name input field accepts Lower case letters ', function () {
+            const characterName = "ladybug";
+            const name = $(selectors.name);
+            clearInputBox(name);
+            name.setValue(characterName);
+            expect(name.getValue()).toEqual(characterName);
+        });
+
+        it('TC-034  Name input field accepts digits ', function () {
+            const characterName = "1234567890";
+            const name = $(selectors.name);
+            clearInputBox(name);
+            name.setValue(characterName);
+            expect(name.getValue()).toEqual(characterName);
+        });
+
+        it('TC-035  Name input field accepts special characters ', function () {
+            const characterName = ";)))# ";
+            const name = $(selectors.name);
+            clearInputBox(name);
+            name.setValue(characterName);
+            expect(name.getValue()).toEqual(characterName);
+        });
+
+        it('TC-036  Name input field accepts mix of letters, digits, and special characters', function () {
+            const characterName = "Karabas - Barabas 10";
+            const name = $(selectors.name);
+            clearInputBox(name);
+            name.setValue(characterName);
+            expect(name.getValue()).toEqual(characterName);
+        });
+
+           it('TC-037  Name input field accepts 1 symbol', function () {
+                const characterName = "a";
+                const name = $(selectors.name);
+                clearInputBox(name);
+                name.setValue(characterName);
+                expect(name.getValue()).toEqual(characterName);
+
+               browser.pause(500);
+               const alerts = $$(selectors.errorAlert);
+               expect(alerts.length).toEqual(0);
+            });
+
+            it('TC-038  Name input field accepts 35 symbols', function () {
+                const characterName = new Array(35).fill("a").join("");
+                const name = $(selectors.name);
+                clearInputBox(name);
+                name.setValue(characterName);
+                expect(name.getValue()).toEqual(characterName);
+
+                browser.pause(500);
+                const alerts = $$(selectors.errorAlert);
+                expect(alerts.length).toEqual(0);
+            });
+
+            it('TC-039  Name input field accepts 70 symbols', function () {
+                const characterName = new Array(70).fill("a").join("");
+                const name = $(selectors.name);
+                clearInputBox(name);
+                name.setValue(characterName);
+                expect(name.getValue()).toEqual(characterName);
+
+                browser.pause(500);
+                const alerts = $$(selectors.errorAlert);
+                expect(alerts.length).toEqual(0);
+            });
+        });
+
+        describe('Age input fields accepts correct inputs', function () {
+            before(() => {
+                browser.maximizeWindow();
+                browser.url('https://qa-apps.netlify.app/app_my_hero');
+            });
+
+            function clearInputBox(input) {
+                input.click();
+                browser.keys(["\ue009" + "a", "\ue017", "\ue000"]); // ctr+a, del
+            }
+
+            it('TC-040  Age input field accepts 1 digit', function () {
+                const digitAge = "1";
+                const age = $(selectors.age);
+                clearInputBox(age);
+                age.setValue(digitAge);
+                expect(age.getValue()).toEqual(digitAge);
+
+                browser.pause(500);
+                const alerts = $$(selectors.errorAlert);
+                expect(alerts.length).toEqual(0);
+            });
+
+            it('TC-041  Age input field accepts 5 digits', function () {
+                const digitAge = new Array(5).fill("1").join("");
+                const age = $(selectors.age);
+                clearInputBox(age);
+                age.setValue(digitAge);
+                expect(age.getValue()).toEqual(digitAge);
+
+                browser.pause(500);
+                const alerts = $$(selectors.errorAlert);
+                expect(alerts.length).toEqual(0);
+            });
+
+            it('TC-042  Age input field accepts 12 digits', function () {
+                const digitAge = new Array(12).fill("1").join("");
+                const age = $(selectors.age);
+                clearInputBox(age);
+                age.setValue(digitAge);
+                expect(age.getValue()).toEqual(digitAge);
+
+                browser.pause(500);
+                const alerts = $$(selectors.errorAlert);
+                expect(alerts.length).toEqual(0);
+            });
+            it('TC-043  Age input value can be increased by spinner', function () {
+                const digitAge = "100";
+                const age = $(selectors.age);
+                clearInputBox(age);
+                age.setValue(digitAge);
+
+                browser.keys("ArrowUp");
+                expect(age.getValue()).toEqual("101");
+            });
+
+            it('TC-044  Age input value can be decreased by spinner', function () {
+                const digitAge = "100";
+                const age = $(selectors.age);
+                clearInputBox(age);
+                age.setValue(digitAge);
+
+                browser.keys("ArrowDown");
+                expect(age.getValue()).toEqual("99");
+            });
+
+        });*/
+
+    describe('Story dropbox has correct options', function () {
+        before(() => {
+            browser.maximizeWindow();
+            browser.url('https://qa-apps.netlify.app/app_my_hero');
+            const story = $(selectors.storyClick);
+            story.click();
+        });
+
+        it('TC-045  Story dropbox has 7 options ', function () {
+            const storyOptions = $$(selectors.storyTypeOptions)
+            expect(storyOptions.length).toEqual(7);
+        });
+        it('TC-046 Option one is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[0];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-047 Option two is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[1];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-048 Option three is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[2];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-049 Option four is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[3];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-050 Option five is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[4];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-051 Option six is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[5];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-052 Option seven is present in dropbox', function () {
+            const story = $$(selectors.storyTypeOptions)[6];
+            expect(story.isDisplayed()).toEqual(true);
+        });
+
+        it('TC-053 Option one is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[0];
+            expect(story.getText()).toEqual(expected.storyOptionOne);
+        });
+
+        it('TC-054 Option two is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[1];
+            expect(story.getText()).toEqual(expected.storyOptionTwo);
+        });
+
+        it('TC-055 Option three is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[2];
+            expect(story.getText()).toEqual(expected.storyOptionThree);
+        });
+
+        it('TC-056 Option four is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[3];
+            expect(story.getText()).toEqual(expected.storyOptionFour);
+        });
+
+        it('TC-057 Option five is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[4];
+            expect(story.getText()).toEqual(expected.storyOptionFive);
+        });
+
+        it('TC-058 Option six is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[5];
+            expect(story.getText()).toEqual(expected.storyOptionSix);
+        });
+
+        it('TC-059 Option seven is correct', function () {
+            const story = $$(selectors.storyTypeOptions)[6];
+            expect(story.getText()).toEqual(expected.storyOptionSeven);
+        });
     });
 
 });

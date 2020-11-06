@@ -83,10 +83,6 @@ describe('Inputs', function () {
                 expect(optionIt.getValue()).toEqual(exp.optionIt);
             });
 
-            it('TC-022 Placeholder for age = Hero\'s age', function () {
-                const placeholderAge = $(sel.age);
-                expect(placeholderAge.getAttribute("placeholder")).toEqual(exp.placeholderAge);
-            });
 
 
         });

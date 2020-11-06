@@ -12,9 +12,12 @@
   "storyPlaceholder": ".ant-select-selection-placeholder",
   "genderChoice" : ".ant-radio-input",
   "tryAgain": ".btn-primary",
-  "imageText": "/*[@class='anticon-plus']/following-sibling::div",
+  "imageText": "span.anticon-plus + div",
   "imageField": "span.ant-upload",
-  "plusInBox":"//*[@data-icon='plus']"
+  "errorAlert": ".ant-form-item-explain",
+  "storyTypeOptions": ".ant-select-item-option-content"
+
+
 
 
 

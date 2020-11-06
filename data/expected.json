@@ -13,5 +13,15 @@
   "optionHe": "he",
   "optionShe": "she",
   "optionIt": "it",
-  "imageText": "drag and drop your image here or browse"
+  "imageText": "drag and drop your image here or browse",
+  "storyOptionOne": "Overcoming the Monster",
+  "storyOptionTwo": "Rebirth",
+  "storyOptionThree": "Quest",
+  "storyOptionFour": "Journey and Return",
+  "storyOptionFive": "Rags and Riches",
+  "storyOptionSix": "Tragedy",
+  "storyOptionSeven": "Comedy"
+
+
+
 }
