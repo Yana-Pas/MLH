@@ -15,12 +15,8 @@
   "imageText": "span.anticon-plus + div",
   "imageField": "span.ant-upload",
   "errorAlert": ".ant-form-item-explain",
-  "storyTypeOptions": ".ant-select-item-option-content"
-
-
-
-
-
+  "storyTypeOptions": ".ant-select-item-option-content",
+  "valuesInText": ".card-text"
 
 
 }

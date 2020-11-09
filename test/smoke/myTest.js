@@ -192,7 +192,7 @@ describe('My Little Hero', function () {
 
 
     }); */
-  /*  describe('Name input fields accepts correct inputs', function () {
+   describe('Name input field accepts correct inputs', function () {
         before(() => {
             browser.maximizeWindow();
             browser.url('https://qa-apps.netlify.app/app_my_hero');
@@ -280,7 +280,7 @@ describe('My Little Hero', function () {
             });
         });
 
-        describe('Age input fields accepts correct inputs', function () {
+   describe('Age input fields accepts correct inputs', function () {
             before(() => {
                 browser.maximizeWindow();
                 browser.url('https://qa-apps.netlify.app/app_my_hero');
@@ -346,7 +346,7 @@ describe('My Little Hero', function () {
                 expect(age.getValue()).toEqual("99");
             });
 
-        });*/
+        });
 
     describe('Story dropbox has correct options', function () {
         before(() => {
