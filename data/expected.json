@@ -21,6 +21,7 @@
   "storyOptionFive": "Rags and Riches",
   "storyOptionSix": "Tragedy",
   "storyOptionSeven": "Comedy",
-  "checkAge": ["123", "two", "three", "four", "five"]
+  "checkAge": ["123", "two", "three", "four", "five"],
+  "checkNames": ["LADYBUG", "ladybug", "1234567890",";)))# ", "Karabas - Barabas 10"]
 
 }

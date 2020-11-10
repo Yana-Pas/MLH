@@ -1,8 +1,8 @@
 const selectors = require ('../data/selectors.json');
 
-function findTextAge () {
+function findTextName () {
     const getStoryText = $(selectors.valuesInText).getText();
-    const pattern = "is (.*) years old,";
+    const pattern = "\n(.*), who";
     const regexp = new RegExp(pattern);
 
     const matches = regexp.exec(getStoryText);
@@ -10,4 +10,4 @@ function findTextAge () {
     return matches[1];
 }
 
-module.exports = findTextAge;
+module.exports = findTextName;
