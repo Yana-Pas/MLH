@@ -22,6 +22,7 @@
   "storyOptionSix": "Tragedy",
   "storyOptionSeven": "Comedy",
   "checkAge": ["123", "two", "three", "four", "five"],
-  "checkNames": ["LADYBUG", "ladybug", "1234567890",";)))# ", "Karabas - Barabas 10"]
+  "checkNames": ["LADYBUG", "ladybug", "1234567890",";)))#", "Karabas - Barabas 10"],
+  "testNamesLength": ["a", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
 
 }

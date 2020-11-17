@@ -3,7 +3,7 @@ const expected = require('../../data/expected.json')
 const data = require('../../data/testData.json');
 const findTextAge = require('../../helpers/findTextAge');
 const inputValues4AndClick = require('../../helpers/inputValues4AndClick');
-const findTextName = require('../../helpers/findTextName')
+const { findTextName } = require('../../helpers/findTextName')
 
 describe('Additional functionality', function () {
 

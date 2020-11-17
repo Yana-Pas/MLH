@@ -3,7 +3,7 @@ const expected = require('../../data/expected.json');
 
 
 describe('My Little Hero', function () {
-  /*  describe('Getting to the page', function () {
+   describe('Getting to the page', function () {
         before(() => {
             browser.maximizeWindow();
             browser.url('https://qa-apps.netlify.app/app_my_hero');
@@ -191,7 +191,7 @@ describe('My Little Hero', function () {
         });
 
 
-    }); */
+    });
    describe('Name input field accepts correct inputs', function () {
         before(() => {
             browser.maximizeWindow();

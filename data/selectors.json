@@ -16,7 +16,8 @@
   "imageField": "span.ant-upload",
   "errorAlert": ".ant-form-item-explain",
   "storyTypeOptions": ".ant-select-item-option-content",
-  "valuesInText": ".card-text"
+  "valuesInText": ".card-text",
+  "storyHeader": "h4"
 
 
 }

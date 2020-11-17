@@ -23,7 +23,9 @@ exports.config = {
         './test/smoke/myTest.js',
         './test/regression/additionalFunction.js',
         './test/smoke/nameInputFieldTests.js',
-        './test/regression/negativeNameTests.js'
+        './test/regression/negativeNameTests.js',
+        './test/smoke/nameAppearsInTheText.js'
+
     ],
     // Patterns to exclude.
     exclude: [
@@ -33,6 +35,7 @@ exports.config = {
         './test/smoke/myTest.js',
         './test/smoke/mainFunctionality.js',
         './test/smoke/nameInputFieldTests.js',
+        './test/regression/negativeNameTests.js'
     ],
     //
     // ============
